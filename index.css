@@ -1,23 +1,73 @@
+body {
+    background: linear-gradient(to left, black, white);
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.maman {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.enfant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: gray;
+    height: 300px;
+    width: 150px;
+}
+
+.enfant:first-child {
+    background-color: yellow;
+}
+
 h1 {
+    color: white;
     text-align: center;
 }
 
-button {
-    margin-top: 20px;
-    background-color: red;
+p {
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    text-align: center;
+    font-size: 20px;
 }
 
-/* Ajoute un effet de zoom au survol */
+nav {
+    display: flex;
+    background-color: gray;
+    height: 100px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 button:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
+    background-color: lightgray;
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
 }
