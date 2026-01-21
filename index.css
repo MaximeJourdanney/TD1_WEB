@@ -1,30 +1,64 @@
+/* ===== CSS PORTFOLIO JOVANKA LOVATA ===== */
+
+/* === IMPORTS === */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* === GENERAL === */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
     height: 100%;
     background: linear-gradient(125deg, #984D38 5%, #181E41 60%);
     color: white;
 }
 
-/* HEADER */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
 
-nav {
+.p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+}
+
+.separator {
+  margin: 50px 50px;
+  border: none;
+  border-top: 1px solid gray;
+}
+
+/* === HEADER === */
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    margin: 0 50px;
 }
 
-.divlogo {
+.logo {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-left: 5%;
 }
 
-.divlogo div {
+.cercle {
     width: 30px;
     height: 30px;
     border: 1px solid white;
@@ -34,27 +68,29 @@ nav {
     align-items: center;
 }
 
-.divlogo span {
+.cercle:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.cercle span {
     font-size: 1rem;
 }
 
-.divmenu {
-    margin-right: 5%;
-}
-
-.divmenu ul {
+.menu {
     display: flex;
     list-style-type: none;
     gap: 2rem;
     align-items: center;
-    padding: 0px;
+    padding: 0;
 }
 
-.divmenu ul li {
+.menu li {
     cursor: pointer;
 }
 
-.divmenu ul li button {
+.button-nav {
     background-color: transparent;
     border: 1px solid white;
     padding: 10px 15px;
@@ -64,92 +100,163 @@ nav {
     font-size: 1rem;
 }
 
-/* MAIN CONTENT */
+.button-nav:hover {
+    background-color: white;
+    color: black;
+    scale: 1.05;
+    transition: all 0.3s ease;
+}
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-top: 50px;
+/* === MAIN CONTENT === */
+
+/* === SECTION 1 === */
+
+.section1 {
+    margin: 0 50px;
+}
+
+.p-section1 {
+    margin-top: 10px;
     text-align: center;
-    margin-bottom: 0px;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    color: gray;
-    font-weight: bold;
-}
-
-.p1 {
-    text-align: center;
-}
-
-.imgjovanka {
+.photo-section1 {
     display: block;
     margin: 20px auto;
     width: 300px;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-.divreseaux {
+.span-absolute {
+    position: absolute;
+    top: 320px;
+    left: -30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1rem;
+    color: gray;
+    transform: rotate(-90deg);
+}
+
+/* === DIV RESEAUX === */
+
+.reseaux {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    width: 100vw;
+    width: 100%;
     height: 80px;
 }
 
-.divreseaux img {
+.reseaux img {
     width: 8%;
     cursor: pointer;
 }
 
-.divsection1 {
+.reseaux img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* === SECTION 2 === */
+
+.section2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 50px;
     margin-top: 60px;
 }
 
-.divsection1 div {
+.section2 div {
     width: 50%;
 }
 
-.divsection1g {
+.section2-gauche {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.divsection1g img {
+.section2-gauche img {
     width: 75%;
     border-radius: 0% 50% 50% 50%;
 }
 
-.divsection1d {
+.section2-droite {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
 }
 
-.divsection1d h2 {
+.section2-droite h2 {
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
     line-height: 180%;
 }
 
-.divsection1d p {
+.section2-droite p {
     width: 250px;
     font-weight: 500;
 }
 
-.traitblanc {
-    width: 90%;
-    height: 1px;
-    background-color: gray;
-    margin: 50px auto;
+/* === SECTION 3 === */
+
+.section3 {
+    margin: 0 50px;
+    display: flex;
 }
+
+.section3-gauche {
+    width: 50%;
+    height: 350px;
+}
+
+.section3-droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+    height: 350px;
+    gap: 10px;
+}
+
+.section3-droite-rectangle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 85%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 1rem;
+    color: black;
+    gap: 5px;
+}
+
+.section3-droite-rectangle:hover {
+    background-color: white;
+}
+
+.section3-droite-rectangle img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.section3-droite-rectangle h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.section3-droite-rectangle p {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* === FOOTER === */
