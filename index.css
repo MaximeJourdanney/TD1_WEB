@@ -90,7 +90,7 @@ h1 {
     cursor: pointer;
 }
 
-.button-nav {
+.button {
     background-color: transparent;
     border: 1px solid white;
     padding: 10px 15px;
@@ -100,7 +100,7 @@ h1 {
     font-size: 1rem;
 }
 
-.button-nav:hover {
+.button:hover {
     background-color: white;
     color: black;
     scale: 1.05;
@@ -148,7 +148,7 @@ h1 {
     align-items: center;
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 100px;
 }
 
 .reseaux img {
@@ -216,6 +216,50 @@ h1 {
     height: 350px;
 }
 
+.s3g-haut {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s3g-bas {
+    display: flex;
+    height: 30%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    height: 100%;
+}
+
+.p-stats1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.p-stats2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.h2-section3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.p-section3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 20px;
+}
+
 .section3-droite {
     display: flex;
     flex-direction: column;
@@ -260,3 +304,24 @@ h1 {
 }
 
 /* === FOOTER === */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.button-footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
