@@ -1,3 +1,29 @@
 h1 {
-    color: blue;
+    color: white;
+}
+
+#container-couleur {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+#container-mouse-position {
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+}
+
+#objet {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+header {
+    background-color: darkblue;
+    padding: 10px;
+    text-align: center;
 }
